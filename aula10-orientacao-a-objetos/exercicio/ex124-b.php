@@ -9,6 +9,22 @@ class Televisao {
 	
 	// métodos
 	public function __construct(){	
+    /* este método é o construtor desta classe
+    O construtor é o método chamado quando é criada uma instância da classe.
+	Por exemplo: 
+	   $tv1 = new Televisao();
+	   
+    No PHP é padronizado o nome __construct() como nome do método construtor.
+    Em outras linguagens, como Java, o construtor tem o mesmo nome da classe
+    */
+
+    /*
+      para acessar um atributo ou método dentro de uma classe, é necessário
+      usar o "$this->"
+      Observe que não é necessário colocar o $ na frente dos nomes de atributos
+      O correto é $this->canal 
+      $this->$canal é incorreto (não precisa o $ na frete do canal)
+    */	
 		$this->status = false;
 		$this->canal = 3;
 		$this->volume = 10;
